@@ -25,44 +25,16 @@
 		</var-tabs>
 		<var-tabs-items v-model:active="active">
             <var-tab-item>
-                <var-space direction="column" style="margin-top: 10px;">
-                    <var-row>
+                <var-space direction="column" style="margin-top: 10px;margin-bottom: 10%">
+                    <template v-for="n in 10" :key="n">
+                      <var-row>
                         <var-col :span="1"></var-col>
                         <var-col :span="22">
-                            <var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card>
+                          <var-card title="2022年4月20日 日记" :subtitle="'Author: Muyz'+n" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card>
                         </var-col>
                         <var-col :span="1"></var-col>
-                    </var-row>
-                    <var-row>
-                        <var-col :span="1"></var-col>
-                        <var-col :span="22"><var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card></var-col>
-                        <var-col :span="1"></var-col>
-                    </var-row>
-                    <var-row>
-                        <var-col :span="1"></var-col>
-                        <var-col :span="22"><var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card></var-col>
-                        <var-col :span="1"></var-col>
-                    </var-row>
-                    <var-row>
-                        <var-col :span="1"></var-col>
-                        <var-col :span="22"><var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card></var-col>
-                        <var-col :span="1"></var-col>
-                    </var-row>
-                    <var-row>
-                        <var-col :span="1"></var-col>
-                        <var-col :span="22"><var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card></var-col>
-                        <var-col :span="1"></var-col>
-                    </var-row>
-                    <var-row>
-                        <var-col :span="1"></var-col>
-                        <var-col :span="22"><var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card></var-col>
-                        <var-col :span="1"></var-col>
-                    </var-row>
-                    <var-row>
-                        <var-col :span="1"></var-col>
-                        <var-col :span="22"><var-card title="2022年4月20日 日记" subtitle="Author: Muyz" description="阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴阿巴巴巴巴巴巴巴巴巴巴巴"></var-card></var-col>
-                        <var-col :span="1"></var-col>
-                    </var-row>
+                      </var-row>
+                    </template>
                 </var-space>
             </var-tab-item>
             <var-tab-item>
